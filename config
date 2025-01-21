@@ -1,0 +1,7 @@
+# List or Single (List separatted by comma: abc,def,ghi)
+# Private Key (Wallet)
+PRIVATE_KEY=abc,def,ghi
+
+# Minimal & Maximal Send
+MIN_SEND=0.01
+MAX_SEND=0.01
