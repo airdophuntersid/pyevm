@@ -7,7 +7,7 @@
 
 from os import getenv as gets
 from dotenv import find_dotenv, load_dotenv
-from typing import Union
+from typing import Union, Optional
 from sys import exit
 
 load_dotenv(
@@ -19,3 +19,4 @@ load_dotenv(
 MAX_SEND: Union[int, float] = gets("MAX_SEND", "")
 MIN_SEND: Union[int, float] = gets("MIN_SEND", "")
 PRIVATE_KEY: Union[str] = gets("PRIVATE_KEY", "").split(",")
+RPC_URL: Optional[str] = gets("RPC_URL", "")

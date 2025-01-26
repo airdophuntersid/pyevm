@@ -1,0 +1,41 @@
+[init]
+        defaultBranch = main
+[color]
+        ui = true
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = red
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+        sparsecheckout = false
+[advice]
+        addignoredfile = false
+        setupstreamfailure = false
+[remote "origin"]
+        url = https://github.com/airdrophuntersid/pyevm.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[rebase]
+        autoStash = true
+[branch "main"]
+        remote = origin
+        merge = refs/heads/main
+[pull]
+        ff = only
+[receive]
+        denyNonFastForwards = true
+        fsckObjects = true
+[url "https://github.com/"]
+        insteadOf = gh:
